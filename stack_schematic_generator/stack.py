@@ -68,7 +68,9 @@ class Stack(object):
         for i, layer in enumerate(self.layers):
             layer.plot(ax, xy, delta_figsize)
 
-        ax.set_xlim(0, xy.get_x_max())
-        ax.set_ylim(0, xy.get_y_max())
+        W = xy.get_x_max()
+        H = xy.get_y_max()
+        ax.set_xlim(-0.01*W, 1.01*W)
+        ax.set_ylim(-0.01*H, 1.01*H)
 
         return fig, ax

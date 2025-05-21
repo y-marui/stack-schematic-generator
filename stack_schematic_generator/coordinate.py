@@ -1,6 +1,5 @@
 import matplotlib.patches as patches
 import numpy as np
-from .layer import Layer
 
 class Coordinate(object):
     """
@@ -30,7 +29,7 @@ class Coordinate(object):
         self.y_center: float = (self.y_right + self.y_left) / 2
         self.rotation: float = 0
 
-    def get_polygon(self, layer: Layer, delta_figsize: list) -> patches.Polygon:
+    def get_polygon(self, layer, delta_figsize: list) -> patches.Polygon:
         """
         Generate a matplotlib Polygon object for the given layer.
 

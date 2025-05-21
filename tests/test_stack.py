@@ -2,7 +2,7 @@ from stack_schematic_generator.stack import Stack
 from stack_schematic_generator.layer import Layer
 import matplotlib.pyplot as plt
 
-with plt.style.context(['matplotlib_extension.article', 'test.mplstyle']):
+with plt.style.context(['matplotlib_extension.article', 'stack_schematic_generator.stack_schematic']):
     stack = Stack([
         Layer("Si Sub.", "lightgray"),
         Layer("SiO$_2$ (100)", "lightgray"),
@@ -14,7 +14,7 @@ with plt.style.context(['matplotlib_extension.article', 'test.mplstyle']):
     stack.plot()
     plt.show()
 
-with plt.style.context(['matplotlib_extension.article', 'test.mplstyle']):
+with plt.style.context(['matplotlib_extension.article', 'stack_schematic_generator.stack_schematic']):
     stack = Stack([
         Layer("Si Sub.", "lightgray"),
         Layer("SiO$_2$ (100)", "lightgray"),

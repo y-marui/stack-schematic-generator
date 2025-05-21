@@ -33,7 +33,7 @@ class Stack(object):
         float
             The sum of the heights and positive slopes of all layers in the stack.
         """
-        return np.sum([layer.hight+np.max([layer.slope, 0]) for layer in self.layers])
+        return np.sum([layer.height+np.max([layer.slope, 0]) for layer in self.layers])
 
     def plot(
             self,
@@ -70,6 +70,5 @@ class Stack(object):
 
         ax.set_xlim(0, xy.get_x_max())
         ax.set_ylim(0, xy.get_y_max())
-        ax.set_axis_off()
 
         return fig, ax

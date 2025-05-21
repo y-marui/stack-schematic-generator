@@ -1,0 +1,26 @@
+figure.figsize:     1.6, 2.4
+
+patch.linewidth: 0.5
+
+axes.grid:          False
+
+axes.spines.left   : False   # display axis spines
+axes.spines.bottom : False
+axes.spines.top    : False
+axes.spines.right  : False
+
+xtick.top:           False
+xtick.bottom:           False
+ytick.right:         False
+ytick.left:         False
+
+xtick.labelbottom:   False
+ytick.labelleft:   False
+
+
+figure.subplot.left:   0  # the left side of the subplots of the figure
+figure.subplot.right:  1    # the right side of the subplots of the figure
+figure.subplot.bottom: 0   # the bottom of the subplots of the figure
+figure.subplot.top: 1
+
+image.aspect:          equal
